@@ -19,13 +19,12 @@ public class Ejercicio2{
 	}
 	//Función para calcular el area de una circunferencia en centímetros cuadrados.
 	public static double calculoArea(double radio){
-		double calculoArea = Math.PI*(radio*radio);
-		return calculoArea;
+		return Math.PI * radio * radio;
 	}
 
 	//Función para calcular la longitud de una circunferencia.
 	public static double calculoLongitud(double radio){
-		double calculoLongitud = 2*Math.PI*radio;
-		return calculoLongitud;
+		return 2 * Math.PI * radio;
+		
 	}
 }

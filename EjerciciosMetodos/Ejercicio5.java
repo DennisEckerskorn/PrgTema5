@@ -16,18 +16,19 @@ public class Ejercicio5{
 		numeroVeces = Integer.parseInt(lector.nextLine());		
 		
 		//Se llama al método.
-		imprimirCaracter(caracter, numeroVeces);
+		System.out.println(print(caracter, numeroVeces));
 		
 		//Exit
 		lector.close();
 		
 				
 	}
-	//Método para imprimir un caracter una cierta cantidad de veces. No es una funcion ya que no devuelve un valor sino lo imprime.
-	public static void imprimirCaracter(char c, int veces){
-		for (int i = 0; i < veces; i++){
-			System.out.print(c);	
+	//Método para devolver un caracter una cantidad de veces.
+	public static String print(char c, int times){
+		String result = "";
+		for (int i = 0; i < times; i++){
+			result += c;
 		}
-		System.out.println("");
+		return result;
 	}
 }
