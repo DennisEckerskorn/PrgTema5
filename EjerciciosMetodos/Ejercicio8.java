@@ -6,7 +6,6 @@ public class Ejercicio8{
         int numberUser = 0;
         boolean validado = false;
 
-        
         //Loop to proof if number is more then 10 and if not to keep asking a number till it is correct.
         do{
             System.out.println("Ingresa un número de 4 dígitos para comprobar si es capicua o no");
@@ -15,8 +14,6 @@ public class Ejercicio8{
             validado = true;
         }
         }while(!validado);
-
-        
 
         //If function is true is capicua.
         if(capicua(numberUser) == true){
@@ -27,7 +24,6 @@ public class Ejercicio8{
         
         //Exit Scanner.
         lector.close();
-
     }
     //Function to convert number to a String and compare each caracter.
     //If you can read the number the same from the right to the left or from the left to the right. Capicua
