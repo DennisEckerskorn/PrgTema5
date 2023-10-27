@@ -23,15 +23,13 @@ public class Ejercicio10{
 		lector.close();
 			
 	}
-	//Funcion para la tabla de multiplicar. ¿¿¿FALTA IMPRIMIR TODOS LOS RESULTADOS DE CADA ITERACION, DE MOMENTO SOLO DEVUELVE EL RESULTADO FINAL.???
-	public static int tablaMultiplicar(int num){
-		int resultado = 0;
-		String impresion = "";
+	//Funcion para la tabla de multiplicar. ¿¿¿FALTA IMPRIMIR TODOS LOS RESULTADOS DE CADA ITERACION, DE MOMENTO SOLO DEVUELVE EL RESULTADO FINAL.??? ***Falta corregir***
+	public static String tablaMultiplicar(int num){
+		String resultado = "";
 		for (int i = 1; i <= 10; i++){
-			resultado = num * i;
-			impresion = num + " * " + i + " = " + resultado; 
+			resultado += num + " * " + i + " = " + (i*num) + "\n"; 
 		}
-		return impresion;
+		return resultado;
 		
 	}
 }
