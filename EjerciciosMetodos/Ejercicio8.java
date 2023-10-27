@@ -37,4 +37,20 @@ public class Ejercicio8{
         }
         return true;
     }
+/* //Corección en clase.
+	public static boolean esCapicua(int n1, int n2, int n3, int n4){
+		String s = String.valueOf(n1) + String.valueOf(n2) + String.valueOf(n3) + String.value(n4);
+		String reverse = "";
+		for (int i = s.length() - 1; i--){
+			reverse += s.charAt(i);
+			
+		}
+		return s.equals(reverse);
+	}
+*/
+
+
+
+
+
 }

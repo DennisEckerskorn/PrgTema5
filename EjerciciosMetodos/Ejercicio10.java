@@ -18,6 +18,9 @@ public class Ejercicio10{
 			//Condición para cambiar el valor de validado.
 			validado = numero <= 0;
 		}while(!validado);
+		
+		//Exit Scanner.
+		lector.close();
 			
 	}
 	//Funcion para la tabla de multiplicar. ¿¿¿FALTA IMPRIMIR TODOS LOS RESULTADOS DE CADA ITERACION, DE MOMENTO SOLO DEVUELVE EL RESULTADO FINAL.???
@@ -26,8 +29,9 @@ public class Ejercicio10{
 		String impresion = "";
 		for (int i = 1; i <= 10; i++){
 			resultado = num * i;
+			impresion = num + " * " + i + " = " + resultado; 
 		}
-		return resultado;
+		return impresion;
 		
 	}
 }

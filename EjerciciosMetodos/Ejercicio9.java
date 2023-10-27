@@ -13,6 +13,9 @@ public class Ejercicio9{
 		//Se imprime el resultado mediante la función.
 		System.out.printf("%d", sumatorio(numero));
 		
+		//Exit Scanner.
+		lector.close();
+		
 	}
 	//Función para calcular el sumatorio de numero. Ejemplo: 5 = 5+4+3+2+1 = 15.
 	public static int sumatorio(int num){
