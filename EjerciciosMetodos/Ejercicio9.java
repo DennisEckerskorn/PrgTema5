@@ -17,8 +17,8 @@ public class Ejercicio9{
 		lector.close();
 		
 	}
-	//Función para calcular el sumatorio de numero. Ejemplo: 5 = 5+4+3+2+1 = 15. ***Corregir con un for mejor***
-	public static int sumatorio(int num){
+	//Función para calcular el sumatorio de numero con un bucle while. Ejemplo: 5 = 5+4+3+2+1 = 15.
+	public static int sumatorio1(int num){
 		int suma = 0;
 		int contador = num;
 		while (contador != 0){
@@ -26,5 +26,15 @@ public class Ejercicio9{
 			contador--;
 		}
 		return suma;		
+	}
+	//Función para calcular el sumatorio de un numero con un bucle for.
+	public static int sumatorio(int num){
+		int suma = 0;
+		int contador = num;
+		for (int i = 0; i < num; i++){
+			suma += contador;
+			contador--;
+		}
+		return suma;
 	}
 }
