@@ -32,7 +32,7 @@ public class Ejercicio14 {
             factorialM *= j;
         }
         //Operation to calculate the combinatori number of N and M.
-        combinatorialNumber = factorialN / factorialM * (factorialN - factorialM);
+        combinatorialNumber = factorialN / factorialM * (factorialN - factorialM); //Something is wrong with formula.
 
         result += "N es: " + factorialN + " M es: " + factorialM + " y el número combinatorio es: " + combinatorialNumber;
 
