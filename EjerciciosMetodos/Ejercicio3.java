@@ -20,7 +20,6 @@ public class Ejercicio3{
 	}
 	//Función para comprobar cual de los numeros es mayor.
 	public static double mayor(double numero1, double numero2){
-		double numeroMayor = numero1;
 		if(numero1 >= numero2){
 			return numero1;
 		}else {
