@@ -1,10 +1,14 @@
 import java.util.Random;
 
 public class Ejercicio11{
-	public static void main(String[] args){
-		//Variables como Constantes ya que los valores en principio no cambian.
-		final int NUM_PARTIDOS = 15;
+	//Constantes.
+	public static final int UNO = 0;
+	public static final int X = 1;
+	public static final int DOS = 2;
+	public static final int NUM_PARTIDOS = 15;
 
+	public static void main(String[] args){
+		
 		//Se imprime el resultado llamando al la llamada del metodo.
 		System.out.println(quiniela(NUM_PARTIDOS));
 	}
@@ -18,19 +22,21 @@ public class Ejercicio11{
 	public static String quiniela(int numPartidos){
 		String resultado = "";
 		for (int i = 1; i <= numPartidos; i++){
-			int alea = aleatorio(1, 3);
+			resultado += String.format("%10s", "Partido " + i + " ");
+			int alea = aleatorio(UNO, DOS);
 			//System.out.println(alea);
 			switch(alea){
-				case 1:
-					resultado += "Partido:\t" + alea + "\n";
+				case UNO:
+					resultado += String.format("%5s", "1");
 					break;
-				case 2:
-					resultado += "Partido:\t" + alea + "\n";
+				case X:
+					resultado += String.format("%5s", "X");
 					break;
-				case 3:	
-					resultado += "Partido:\t" + "x\n";
+				case DOS:	
+					resultado += String.format("%5s", "2");
 					break;
 			}
+			resultado += "\n";
 			
 		}
 		return resultado;

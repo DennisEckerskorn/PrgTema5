@@ -8,7 +8,6 @@ public class Ejercicio15{
 		boolean valid;
 		
 		do{
-		
 			showMenu();
 			option = Integer.parseInt(lector.nextLine());
 			
@@ -25,6 +24,7 @@ public class Ejercicio15{
 		System.out.println("La palabra más larga es: " + shortWord(word1, word2, word3));
 			
 	}
+
 	public static void showMenu(){
 		System.out.println("MENÚ PRINCIPAL");
 		System.out.println("==============");
@@ -35,6 +35,7 @@ public class Ejercicio15{
 		System.out.println("0. Salir");
 	}
 
+	//Function to return the longest word of 3.
 	public static String longWord(String w1, String w2, String w3){
 		if(w1.length() >= w2.length() && w1.length() >= w3.length()){
 			return w1;
@@ -44,7 +45,8 @@ public class Ejercicio15{
 			return w3;
 		}  
 	}
-	
+
+	//Function to return the shortest word of the 3.
 	public static String shortWord(String w1, String w2, String w3){
 		if(w1.length() <= w2.length() && w1.length() <= w3.length()){
 			return w1;
@@ -56,7 +58,8 @@ public class Ejercicio15{
 	
 	}
 	
-	public static vocals(String w1, String w2, String w3){
-		
+	public static String vocals(String w1){
+		int counterVocals = 0;
+		int counter
 	}
 }
