@@ -1,4 +1,3 @@
-package GitHub.CustomLibrary;
 public class Ejercicio12 {
 	public static enum Calificacion {
 		INSUFICIENTE, SUFICIENTE, BIEN, NOTABLE, EXCELENTE, ERROR
@@ -12,9 +11,6 @@ public class Ejercicio12 {
 			System.out.println(obtenerCalificacion(nota));
 		}	
     	}
-    
-	
-	//Correcion clase
 	public static Calificacion obtenerCalificacion(double nota){
 		int notaEntera = (int) nota;
 		switch(notaEntera) {
