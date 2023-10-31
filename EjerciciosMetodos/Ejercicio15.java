@@ -18,13 +18,14 @@ public class Ejercicio15{
 					valid = true;
 				break;		
 				case 1:
-					System.out.println("Dime 3 palabras, apreta intro despues de cada una:");
+					System.out.println("PALABRA MÁS LARGA");
 					word1 = lector.nextLine();
 					word2 = lector.nextLine();
 					word3 = lector.nextLine();
 					System.out.println("La palabra más larga es: " + longWord(word1, word2, word3));
 				break;
 				case 2:
+					System.out.println("PALABRA MÁS CORTA");
 					System.out.println("Dime 3 palabras, apreta intro despues de cada una:");
 					word1 = lector.nextLine();
 					word2 = lector.nextLine();
