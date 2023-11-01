@@ -4,7 +4,7 @@ public class Ejercicio4{
 	public static void main(String[] args){
 		//Variables.
 		Scanner lector = new Scanner(System.in);
-		double num1, num2, num3, num4, resultado;
+		double num1, num2, num3, num4;
 
 		//Se piden los numeros.
 		System.out.println("Ingresa el primer número:");

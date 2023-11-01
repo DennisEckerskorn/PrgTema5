@@ -44,7 +44,10 @@ public class Ejercicio15{
 				default:
 					System.out.println("ERROR, introduce un número entre 0 y 3");
 			}
-		}while(!valid);	
+		}while(!valid);
+			
+		//Exit Scanner.
+		lector.close();
 	}
 
 	//Method to print a menu on the console screen.
