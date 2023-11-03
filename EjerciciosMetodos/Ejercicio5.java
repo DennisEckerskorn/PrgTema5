@@ -16,7 +16,7 @@ public class Ejercicio5{
 		numeroVeces = Integer.parseInt(lector.nextLine());		
 		
 		//Se llama al método.
-		System.out.println(print(caracter, numeroVeces));
+		System.out.println(printChar(caracter, numeroVeces));
 		
 		//Exit
 		lector.close();
@@ -24,7 +24,7 @@ public class Ejercicio5{
 				
 	}
 	//Método para devolver un caracter una cantidad de veces.
-	public static String print(char c, int times){
+	public static String printChar(char c, int times){
 		String result = "";
 		for (int i = 0; i < times; i++){
 			result += c;

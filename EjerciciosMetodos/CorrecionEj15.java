@@ -22,7 +22,7 @@ public class CorrecionEj15{
 				case 3:
 					String s1 = Lib.solicitarString("Introduce una palabra", 2, 20);
 					int numVocales = cuentaVocales(s1);
-					System.out.printlf("La palabra %s tiene %d vocales\n, s1, n");//Falta acabar
+					System.out.printf("La palabra %s tiene %d vocales\n", s1, numVocales);//Falta acabar
 					break;
 		
 			}
@@ -33,10 +33,10 @@ public class CorrecionEj15{
 		boolean valido;
 		do{
 			System.out.println("1. Palabra más larga");
-			System.out println("2. Palabra más corta");
-			System.out println("3. Número de vocales");
-			System.out println("--------------------");
-			System.out println("0. Salir");
+			System.out.println("2. Palabra más corta");
+			System.out.println("3. Número de vocales");
+			System.out.println("--------------------");
+			System.out.println("0. Salir");
 			opcion = Lib.solicitarEntero("Introduce una opción", 0, 3);
 		}while(!valido);
 		return opcion;
@@ -48,7 +48,7 @@ public class CorrecionEj15{
 	}
 	
 	public static String palabraMasLarga(String s1, String s2){
-		return s1.length > s2.length() ? s1 : s2;
+		return s1.length() > s2.length() ? s1 : s2;
 	}
 
 	public static String palabraMasCorta(String s1, String s2, String s3){
@@ -57,13 +57,13 @@ public class CorrecionEj15{
 	}
 	
 	public static String palabraMasCorta(String s1, String s2){
-		return s1.length < s2.length() ? s1 : s2;
+		return s1.length() < s2.length() ? s1 : s2;
 	}
 	
 	public static int cuentaVocales(String s1){
 		int contador = 0;
 		for (int i = 0; i < s.length(); i++){
-			if (esVocal(s.charAt(i)) {
+			if (esVocal(s.charAt(i))) {
 				contador++;
 			}
 		}
