@@ -33,7 +33,7 @@ public class LibDos {
 		do{
 			System.out.println(mensaje);
 			resultado = Integer.parseInt(lector.nextLine());
-			valido = (opcion >= valorMin && opcion <= valorMax);
+			valido = (resultado >= valorMin && resultado <= valorMax);
 			if (!valido){
 				System.out.printf("Error => Valor mínimo: %d, Valor máximo: %d\n", valorMin, valorMax);
 			}

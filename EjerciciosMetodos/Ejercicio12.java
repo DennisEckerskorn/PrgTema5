@@ -7,7 +7,7 @@ public class Ejercicio12 {
 
 	public static void main(String[] args) {
       		for (int i = 1; i <= NUM_VECES; i++){
-			double nota = Lib.random(0.0, 15.0);
+			double nota = LibDos.random(0.0, 15.0);
 			System.out.println(obtenerCalificacion(nota));
 		}	
     	}

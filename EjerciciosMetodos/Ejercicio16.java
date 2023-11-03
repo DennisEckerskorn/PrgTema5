@@ -13,7 +13,7 @@ public class Ejercicio16{
 		numberToReplace = Integer.parseInt(lector.nextLine());
 
 		System.out.println("Please write the letter you want to use to replace the number");
-		letter = lector.next().charAt(0);
+		letter = lector.nextLine().charAt(0);
 
 		System.out.println(replaceDigits(numberToReplace, letter));
 
@@ -28,7 +28,7 @@ public class Ejercicio16{
 					for (int l = 0; l <= LOOP_REP; l++){
 						String formattedString = String.format("%s-%s-%s-%s\n", i, j, k, l);
                         // Replace the specific number with the character
-                        formattedString = formattedString.replace(String.valueOf(n), String.valueOf(c));
+                        formattedString = formattedString.replaceAll(String.valueOf(n), String.valueOf(c));
                         result += formattedString;
 					}
 				}		
