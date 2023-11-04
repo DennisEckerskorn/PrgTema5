@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import CustomLibrary.LibDos;
 
 public class CorrecionEj15{
 	public static Scanner lector = new Scanner(System.in); //Disponible para todo.

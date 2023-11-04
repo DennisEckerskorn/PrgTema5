@@ -2,17 +2,20 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class LibDos {
+	
 	private static Random rnd = new Random();
 	private static Scanner lector = new Scanner(System.in);
-
+	
+	//Función para devolver un numero aleatorio entre un rango min y max.
 	public static int random(int min, int max){
 		return rnd.nextInt(max - min + 1) + min;
 	}
-
+	//Función para devolver un numero aleatorio entre un rango min y max con decimales.
 	public static double random(double min, double max){
 		return rnd.nextDouble() * (max - min) + min;
 	}
 
+	//Función para leer un String, validando valor min y max.
 	public static String solicitarString(String mensaje, int longitudMinima, int longitudMaxima){
 		boolean valido;
 		String resultado;
@@ -27,6 +30,7 @@ public class LibDos {
 		return resultado;
 	}
 
+	//Función para leer un Entero, validando valor min y max.
 	public static int solicitarEntero(String mensaje, int valorMin, int valorMax){
 		boolean valido;
 		int resultado;
@@ -38,6 +42,28 @@ public class LibDos {
 				System.out.printf("Error => Valor mínimo: %d, Valor máximo: %d\n", valorMin, valorMax);
 			}
 		}while (!valido);
+		return resultado;
+	}
+	//Función para leer un Double, validando valor min y max.
+	public static double solicitarDouble(String mensaje, double valorMin, double valorMax){
+		boolean valido;
+		double resultado;
+		do{
+			System.out.println(mensaje);
+			resultado = Double.parseDouble(lector.nextLine());
+			valido = (resultado >= valorMin && resultado <= valorMax);
+			if (!valido){
+				System.out.printf("Error => Valor mínimo: %e, Valor máximo: %e\n", valorMin, valorMax);
+			}
+		}while (!valido);
+		return resultado;
+	}
+
+	//Función para leer un caracter, FALTA VALIDAR
+	public static char solicitarCaracter(String mensaje){
+		char resultado;
+		System.out.println(mensaje);
+		resultado = lector.nextLine().charAt(0);
 		return resultado;
 	}
 }
