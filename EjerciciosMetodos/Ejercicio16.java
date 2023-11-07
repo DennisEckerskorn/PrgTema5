@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Ejercicio16{
+	//Constant for the for loop iteration.
 	public static final int LOOP_REP = 9;
 	
 	public static void main(String[] args){
@@ -37,7 +38,4 @@ public class Ejercicio16{
 		}
 		return result;
 	}
-
-	
-	
 }
