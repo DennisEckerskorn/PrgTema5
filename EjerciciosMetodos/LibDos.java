@@ -28,6 +28,7 @@ public class LibDos {
 				System.out.printf("Error => Longitud mínima: %d, Longitud máxima: %d\n", longitudMinima, longitudMaxima);
 			}
 		}while(!valido);
+		lector.close();
 		return resultado;
 	}
 
@@ -43,6 +44,7 @@ public class LibDos {
 				System.out.printf("Error => Valor mínimo: %d, Valor máximo: %d\n", valorMin, valorMax);
 			}
 		}while (!valido);
+		lector.close();
 		return resultado;
 	}
 
@@ -58,10 +60,11 @@ public class LibDos {
 				System.out.printf("Error => Valor mínimo: %e, Valor máximo: %e\n", valorMin, valorMax);
 			}
 		}while (!valido);
+		lector.close();
 		return resultado;
 	}
 
-	//Función para leer un caracter, FALTA VALIDAR
+	//Función para leer un caracter, FALTA VALIDAR Y ACABAR.
 	public static char solicitarCaracter(String mensaje){
 		char resultado;
 		System.out.println(mensaje);
@@ -94,10 +97,10 @@ public class LibDos {
         resultado += String.format("%d-%c", dni, letra);
         return resultado;
     }
-
-	public static char calcularLetraNif(int dni){
+	//Función para devolver solamente el caracter del NIF que se le pasa
+	public static char calcularLetraNif(int nif){
         String caracteresNIF = "TRWAGMYFPDXBNJZSQVHLCKE";
-        int modulo = dni % 23;
+        int modulo = nif % 23;
         char letra = caracteresNIF.charAt(modulo);
         return letra;
 	}

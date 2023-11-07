@@ -21,7 +21,7 @@ public class Ejercicio19 {
             System.out.println("El NIF no es correcto");
         }
     }
-    
+    //Función para validar el NIF.
     public static boolean validarNIF(String nif){
         char letra = nif.charAt(nif.length() - 1);
         int dni = Integer.parseInt(nif.substring(0,nif.length() - 1));
