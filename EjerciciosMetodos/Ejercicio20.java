@@ -9,7 +9,7 @@ public class Ejercicio20 {
         
         //Se pide la fecha mediante una función desde LibDos.java
         fechaNacimiento = LibDos.solicitarString("Ingresa tu fecha de nacimiento, formato dd-mm-aaaa", MIN_VALUE, MAX_VALUE);
-        
+        //sumaFecha = sumarDigitos(fechaNacimiento);
         //Se llama la función para convertir el String que contiene la fecha introducida en el formato dado a un Entero.
         fechaN = convertirStringEntero(fechaNacimiento);
 
@@ -33,15 +33,31 @@ public class Ejercicio20 {
             //Convertimos el String a un int para trabajar con el.
             int fechaN = Integer.parseInt(fN);
             return fechaN;
-         } 
+        } 
 
-         //Función para suma digitos de un entero. Ejemplo: 1805 = 1+8+0+5.
-         public static int sumarDigitos (int num){
+         //Función para suma digitos de un entero con un bucle while. Ejemplo: 1805 = 1+8+0+5.
+        public static int sumarDigitos (int num){
             int result = 0;
             while (num > 0){
                 result += num % 10;
                 num = num / 10;
             }
             return result;
-         }
+        }
+    /* 
+        public static int sumarDigitos(String num){
+            int result = 0;
+            for (int i = 0; i < num.length(); i++){
+                char digito = num.charAt(i);
+                if (Character.isDigit(digito)) {
+                    int digitoEntero = Character.getNumericValue(digito);
+                    result += digitoEntero;
+                }
+            }
+            return result;  
+        }
+        */
+    
+
+
 }
