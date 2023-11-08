@@ -28,7 +28,6 @@ public class LibDos {
 				System.out.printf("Error => Longitud mínima: %d, Longitud máxima: %d\n", longitudMinima, longitudMaxima);
 			}
 		}while(!valido);
-		lector.close();
 		return resultado;
 	}
 
@@ -60,7 +59,6 @@ public class LibDos {
 				System.out.printf("Error => Valor mínimo: %e, Valor máximo: %e\n", valorMin, valorMax);
 			}
 		}while (!valido);
-		lector.close();
 		return resultado;
 	}
 
@@ -69,7 +67,7 @@ public class LibDos {
 		char resultado;
 		System.out.println(mensaje);
 		resultado = lector.nextLine().charAt(0);
-		return resultado;
+		return Character.toLowerCase(resultado);
 	}
 
 	//Función para solicitar un entero, especificamente para un DNI.
@@ -84,7 +82,6 @@ public class LibDos {
 				System.out.printf("Error => Valor mínimo: %d, Valor máximo: %d\n", valorMin, valorMax);
 			}
 		}while (!valido);
-		lector.close();
 		return resultado;
 	}
 

@@ -13,6 +13,7 @@ public class EjercicioString {
         c2 = lector.nextLine().charAt(0);
 
         System.out.println(sustituir(palabra, c1, c2));
+        lector.close();
     }
     public static String sustituir(String s, char origen, char destino){
         String resultado = "";
