@@ -67,7 +67,7 @@ public class LibDos {
 		char resultado;
 		System.out.println(mensaje);
 		resultado = lector.nextLine().charAt(0);
-		return Character.toLowerCase(resultado);
+		return resultado;
 	}
 
 	//Función para solicitar un entero, especificamente para un DNI.
