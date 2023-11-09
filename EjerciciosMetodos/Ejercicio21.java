@@ -1,10 +1,10 @@
 import java.util.Scanner;
 public class Ejercicio21 {
     public static final int PUNTOS_MAX = 11;
-    public static int tiradaPlayer;
+    public static int tiradaPlayer = 0;
     public static int puntosPlayer = 0;
     public static int porrasPlayer = 0;
-    public static int tiradaCPU;
+    public static int tiradaCPU = 0;
     public static int puntosCPU = 0;
     public static int porrasCPU = 0;
     public static int opcion;
@@ -24,7 +24,7 @@ public class Ejercicio21 {
         System.out.println("Hasta pronto!!");
     }
 
-    //Mostrar Menu y pedimos Entero.
+    //Mostrar Menu y pedimos Entero 1 o 0.
     public static int mostrarMenu(){
         int opcion;
         System.out.println("***************************");
@@ -41,7 +41,7 @@ public class Ejercicio21 {
         int dado = LibDos.random(0, 6); 
         return dado;
     }
-
+    //Empieza el juego, hay varias funciones en esta función.
     public static void jugarJuego(Scanner lector){
         porrasPlayer = 0;
         porrasCPU = 0;
@@ -63,6 +63,7 @@ public class Ejercicio21 {
         }while (porrasPlayer < 5 && porrasCPU < 5);
     }
 
+    //Funcion para ejecutar el turno del jugador, se incializa en jugarJuego().
     public static int turnoPlayer(int puntosPlayer){
         char plantarse;
         boolean plantado = false;
@@ -107,7 +108,7 @@ public class Ejercicio21 {
             }
         }while (true);
     }
-    
+    //Funcion para el turno de la cpu, se inicializa en jugarJuego().
     public static int turnoCPU(int puntosCPU){
         while (puntosCPU < PUNTOS_MAX){
             System.out.println("CPU lanza el dado al aire ...");
