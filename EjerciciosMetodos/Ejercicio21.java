@@ -80,7 +80,7 @@ public class Ejercicio21 {
             System.out.println("\nTu puntuación actual es " + puntosPlayer);
 
             if (puntosPlayer < PUNTOS_MAX){
-                plantarse = LibDos.solicitarCaracter("¿Deseas plantarte con " + puntosPlayer +" puntos? (s/n): ");
+                plantarse = LibDos.solicitarCaracter("¿Deseas plantarte con " + puntosPlayer +" puntos? (s/n): ", 's', 'n');
                 plantado = plantarse == 's' || plantarse == 'S';
 
                 if(plantado){

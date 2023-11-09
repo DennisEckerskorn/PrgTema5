@@ -10,7 +10,9 @@ public class Ejercicio17 {
         //Se llaman los metodos para pedir datos y validar las entradas.
         alto = LibDos.solicitarEntero("Ingresa el alto:", 0, 30);
         ancho = LibDos.solicitarEntero("Ingresa el ancho:", 0, 30);
-        caracter = LibDos.solicitarCaracter("Ingresa un caracter o simbolo:");//Falta validar esta función.
+        //Leemos el simbolo.
+        System.out.println("Ingresa un caracter o simbolo:");
+        caracter = lector.nextLine().charAt(0);
         //Imprimimos el resultado de la función.
         System.out.println(rectangulo(alto, ancho, caracter));
         //Exit Scanner.
