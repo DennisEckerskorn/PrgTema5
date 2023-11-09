@@ -31,6 +31,21 @@ public class LibDos {
 		return resultado;
 	}
 
+	//Función para leer un caracter, FALTA VALIDAR Y ACABAR.
+	public static char solicitarCaracter(String mensaje, char op1, char op2){
+		char resultado;
+		boolean valido;
+		do{
+			System.out.println(mensaje);
+			resultado = lector.nextLine().toLowerCase().charAt(0);
+			valido = resultado == Character.toLowerCase(op1) || resultado == Character.toLowerCase(op2);
+			if(!valido){
+				System.out.printf("Error => El carácter debe ser %c o %c\n", op1, op2);
+			}
+		}while(!valido);
+		return resultado;
+	}
+
 	//Función para leer un Entero, validando valor min y max.
 	public static int solicitarEntero(String mensaje, int valorMin, int valorMax){
 		boolean valido;
@@ -58,14 +73,6 @@ public class LibDos {
 				System.out.printf("Error => Valor mínimo: %e, Valor máximo: %e\n", valorMin, valorMax);
 			}
 		}while (!valido);
-		return resultado;
-	}
-
-	//Función para leer un caracter, FALTA VALIDAR Y ACABAR.
-	public static char solicitarCaracter(String mensaje){
-		char resultado;
-		System.out.println(mensaje);
-		resultado = lector.nextLine().charAt(0);
 		return resultado;
 	}
 
