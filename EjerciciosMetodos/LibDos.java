@@ -43,7 +43,6 @@ public class LibDos {
 				System.out.printf("Error => Valor mínimo: %d, Valor máximo: %d\n", valorMin, valorMax);
 			}
 		}while (!valido);
-		lector.close();
 		return resultado;
 	}
 
